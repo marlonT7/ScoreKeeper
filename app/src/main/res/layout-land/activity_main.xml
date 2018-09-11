@@ -61,11 +61,35 @@
             app:layout_constraintTop_toTopOf="@+id/imageView"
             app:layout_constraintVertical_bias="0.47000003" />
 
+        <Button
+
+            android:id="@+id/add_team1_foul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/foul"
+            app:layout_constraintEnd_toEndOf="@+id/team1_name"
+            app:layout_constraintStart_toStartOf="@+id/team1_name"
+            app:layout_constraintTop_toBottomOf="@+id/team1_name" />
+
+        <Button
+            android:id="@+id/add_team2_foul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/foul"
+            app:layout_constraintEnd_toEndOf="@+id/team2_name"
+            app:layout_constraintStart_toStartOf="@+id/team2_name"
+            app:layout_constraintTop_toBottomOf="@+id/team2_name" />
 
         <TextView
             android:id="@+id/team1_name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="27dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
@@ -76,7 +100,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
 
         <TextView
             android:id="@+id/team2_name"
@@ -316,9 +341,9 @@
             android:layout_marginTop="8dp"
             android:contentDescription="@string/adds_yellow_card_team1"
             android:src="@drawable/ic_yellow_card"
-            app:layout_constraintEnd_toEndOf="@+id/team1_name"
-            app:layout_constraintStart_toStartOf="@+id/team1_name"
-            app:layout_constraintTop_toBottomOf="@+id/team1_name" />
+            app:layout_constraintEnd_toEndOf="@+id/add_team1_foul"
+            app:layout_constraintStart_toStartOf="@+id/add_team1_foul"
+            app:layout_constraintTop_toBottomOf="@+id/add_team1_foul" />
 
         <ImageButton
             android:id="@+id/add_yellow_card_team2"
@@ -329,9 +354,9 @@
             android:layout_marginTop="8dp"
             android:contentDescription="@string/adds_yellow_card_team2"
             android:src="@drawable/ic_yellow_card"
-            app:layout_constraintEnd_toEndOf="@+id/team2_name"
-            app:layout_constraintStart_toStartOf="@+id/team2_name"
-            app:layout_constraintTop_toBottomOf="@+id/team2_name" />
+            app:layout_constraintEnd_toEndOf="@+id/add_team2_foul"
+            app:layout_constraintStart_toStartOf="@+id/add_team2_foul"
+            app:layout_constraintTop_toBottomOf="@+id/add_team2_foul" />
 
         <ImageButton
             android:id="@+id/add_red_card_team1"

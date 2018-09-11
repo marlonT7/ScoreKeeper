@@ -16,5 +16,6 @@
     <string name="adds_red_card_team1">Adds a red card to the team 1</string>
     <string name="adds_red_card_team2">Adds a red card to the team 2</string>
     <string name="goal">Goal</string>
+    <string name="foul">Foul</string>
     <string name="is_penalty_string">Is penalty?</string>
 </resources>

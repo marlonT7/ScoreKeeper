@@ -4,20 +4,45 @@ import android.os.Parcel
 import android.os.Parcelable
 
 data class Team(var goals: Int = 0,
-           private var penaltyGoals: Int = 0,
-           var fouls: Int = 0,
-           private var yellowCards: Int = 0,
-           private var redCardsByFouls: Int = 0,
-           private var redCardsByYellowCards: Int = 0) : Parcelable {
+                var penaltyGoals: Int = 0,
+                var fouls: Int = 0,
+                var yellowCards: Int = 0,
+                var redCardsByFouls: Int = 0,
+                var redCardsByYellowCards: Int = 0) : Parcelable {
 
-    fun addGoal()=goals++
-    fun addPenaltyGoal()=penaltyGoals++
-    fun addFoul()=fouls++
-    fun addYellowCard()=yellowCards++
-    fun addRedCard()= redCardsByFouls++
-    fun addRedCardsByYellowCards()=redCardsByYellowCards++
-    fun hasPairYellowCards(): Boolean {
-        return yellowCards.rem(2)==0
+    fun addGoal(): Int {
+        goals++
+        return goals
+    }
+
+    fun addPenaltyGoal(): Int {
+        penaltyGoals++
+        return penaltyGoals
+    }
+
+    fun addFoul():Int {
+        fouls++
+        return fouls
+    }
+
+    fun addYellowCard() : Int{
+        yellowCards++
+        return yellowCards
+    }
+
+    fun addRedCard():Int {
+        redCardsByFouls++
+        return redCardsByFouls
+    }
+
+    fun addRedCardsByYellowCards():Int {
+        redCardsByYellowCards++
+        return redCardsByYellowCards
+    }
+
+    // Validates if can add a red card
+    fun validateYellowCards(): Boolean {
+        return yellowCards != 0 && yellowCards / 2 > redCardsByYellowCards
     }
 
 
@@ -49,4 +74,5 @@ data class Team(var goals: Int = 0,
         }
     }
 }
+
 
