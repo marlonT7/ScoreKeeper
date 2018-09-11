@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
             // Adds the yellow card to the count
             yellowCards.text = team2.addYellowCard().toString()
             // If is the second yellow card for a player (the switch is checked), adds a red card to the count
-            if (isSecondYellowCard.isChecked&&team2.validateYellowCards()) {
+            if (isSecondYellowCard.isChecked && team2.validateYellowCards()) {
                 val redCard = findViewById<TextView>(R.id.team2_red_cards_by_yellow)
                 redCard.text = team2.addRedCardsByYellowCards().toString()
             }

@@ -20,22 +20,22 @@ data class Team(var goals: Int = 0,
         return penaltyGoals
     }
 
-    fun addFoul():Int {
+    fun addFoul(): Int {
         fouls++
         return fouls
     }
 
-    fun addYellowCard() : Int{
+    fun addYellowCard(): Int {
         yellowCards++
         return yellowCards
     }
 
-    fun addRedCard():Int {
+    fun addRedCard(): Int {
         redCardsByFouls++
         return redCardsByFouls
     }
 
-    fun addRedCardsByYellowCards():Int {
+    fun addRedCardsByYellowCards(): Int {
         redCardsByYellowCards++
         return redCardsByYellowCards
     }

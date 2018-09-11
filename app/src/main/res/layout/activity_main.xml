@@ -349,7 +349,6 @@
             app:layout_constraintTop_toBottomOf="@+id/add_team1_foul" />
 
         <ImageButton
-            android:focusableInTouchMode="false"
             android:id="@+id/add_yellow_card_team2"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -358,6 +357,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/adds_yellow_card_team2"
+            android:focusableInTouchMode="false"
             android:src="@drawable/ic_yellow_card"
             app:layout_constraintBottom_toBottomOf="@+id/add_yellow_card_team1"
             app:layout_constraintEnd_toEndOf="@+id/is_penalty"
@@ -365,26 +365,26 @@
             app:layout_constraintTop_toTopOf="@+id/add_yellow_card_team1" />
 
         <ImageButton
-            android:focusableInTouchMode="false"
             android:id="@+id/add_red_card_team1"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/adds_red_card_team1"
+            android:focusableInTouchMode="false"
             android:src="@drawable/ic_red_card"
             app:layout_constraintEnd_toEndOf="@+id/switch1"
             app:layout_constraintStart_toStartOf="@+id/switch1"
             app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
         <ImageButton
-            android:focusableInTouchMode="false"
             android:id="@+id/add_red_card_team2"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/adds_red_card_team2"
+            android:focusableInTouchMode="false"
             android:src="@drawable/ic_red_card"
             app:layout_constraintEnd_toEndOf="@+id/switch2"
             app:layout_constraintStart_toStartOf="@+id/switch2"
@@ -455,7 +455,6 @@
             app:layout_constraintTop_toBottomOf="@+id/team1_red_cards_by_yellow" />
 
         <Button
-            android:focusableInTouchMode="false"
             android:id="@+id/button7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -463,6 +462,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:focusableInTouchMode="false"
             android:text="@string/goal"
             app:layout_constraintBottom_toBottomOf="@+id/button6"
             app:layout_constraintEnd_toEndOf="parent"
