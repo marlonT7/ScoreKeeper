@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="team1">Team 1</string>
+    <string name="score_keeper">Score keeper</string>
+    <string name="team2">Team 2</string>
+    <string name="fouls">Fouls:</string>
+    <string name="penalties">Goals from penalties:</string>
+    <string name="yellow_cards">Yellow cards:</string>
+    <string name="red_cards_fouls">Red card fouls</string>
+    <string name="default_value">0</string>
+    <string name="red_cards_by_yellow">Red cards by second yellow card</string>
+    <string name="second_yellow_card">Second yellow card?</string>
+    <string name="red_card_because_of_yellow_cards">Red card because of yellow cards</string>
+    <string name="adds_yellow_card_team1">Adds a yellow card to the team1</string>
+    <string name="adds_yellow_card_team2">Adds a yellow card to the team 2</string>
+    <string name="adds_red_card_team1">Adds a red card to the team 1</string>
+    <string name="adds_red_card_team2">Adds a red card to the team 2</string>
+    <string name="goal">Goal</string>
+    <string name="is_penalty_string">Is penalty?</string>
+</resources>
